@@ -1,27 +1,21 @@
-import '@styles/global.css'
+import '@styles/globals.css';
 
 export const metadata = {
-  title: "Promptopia",
-  description: 'Discover & Share AI Prompts'
+  title: 'Promptopia',
+  description: 'Discover & Share AI Prompts',
+};
 
-}
-
-const RootLayout = () => {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div className='main'>
-          <div className='gradient'/>
-
+        <div className="main">
+          <div className="gradient" />
         </div>
-        <main className='app'>
-          {children}
-
-        </main>
+        <main className="app">{children}</main>
       </body>
-      
-  </html>>
-  )
-}
+    </html>
+  );
+};
 
-export default RootLayout
+export default RootLayout;
